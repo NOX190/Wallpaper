@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOX Wallpapers - AI Generated Wallpapers</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            background: #fff;
+            padding: 10px 0;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        nav ul li a:hover {
+            background: #eaeaea;
+        }
+        .categories, .wallpapers {
+            margin: 30px 0;
+        }
+        .category-list button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            background: #fff;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .category-list button:hover {
+            background: #ddd;
+        }
+        .grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .wallpaper {
+            background: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .wallpaper img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .wallpaper button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            border: none;
+            background: #007bff;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .wallpaper button:hover {
+            background: #0056b3;
+        }
+        footer {
+            margin-top: 20px;
+            padding: 15px;
+            background: #fff;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+        }
+        .social-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        /* Dropdown Container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    cursor: pointer;
+}
+
+/* Dropdown Content (Initially Hidden) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: white;
+    min-width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+/* Dropdown Content Links */
+.dropdown-content a {
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+.dropdown-content a:hover {
+    background: #f1f1f1;
+}
+
+/* Show Dropdown on Hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>NOX Wallpapers</h1>
+        <p>Download Stunning AI-Generated Wallpapers – Unique, High-Quality, and Free!</p>
+        <input type="text" placeholder="Search wallpapers..." id="search-bar">
+    </header>
+    
+   <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Trending</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropbtn">Categories ⏷</a>
+            <div class="dropdown-content">
+                <a href="abstract.html">Abstract</a>
+                <a href="nature.html">Nature</a>
+                <a href="cyberpunk.html">Cyberpunk</a>
+                <a href="minimalist.html">Minimalist</a>
+                <a href="anime-gaming.html">Anime & Gaming</a>
+                <a href="dark-amoled.html">Dark & Amoled</a>
+                <a href="motivation.html">Quotes & Motivation</a>
+            </div>
+        </li>
+        <li><a href="#">Dark Mode</a></li>
+    </ul>
+</nav>
+
+    
+    <section class="categories">
+        <h2>Categories</h2>
+        <div class="category-list">
+            <button onclick="location.href='abstract.html'">Abstract</button>
+            <button onclick="location.href='nature.html'">Nature</button>
+            <button onclick="location.href='cyberpunk.html'">Cyberpunk</button>
+            <button onclick="location.href='minimalist.html'">Minimalist</button>
+            <button onclick="location.href='anime-gaming.html'">Anime & Gaming</button>
+            <button onclick="location.href='dark-amoled.html'">Dark & Amoled</button>
+            <button onclick="location.href='motivation.html'">Quotes & Motivation</button>
+        </div>
+    </section>
+    
+    <section class="wallpapers">
+        <h2>Trending Wallpapers</h2>
+        <div class="grid">
+            <div class="wallpaper">
+                <img src="images/Anime-Boy.jpg" alt="Wallpaper 1">
+                <button>Download</button>
+            </div>
+            <div class="wallpaper">
+                <img src="images/futuristic cyberpunk city.jpg" alt="Wallpaper 2">
+                <button>Download</button>
+            </div>
+            <div class="wallpaper">
+                <img src="images/futuristic-hyper-car.jpg" alt="Wallpaper 3">
+                <button>Download</button>
+            </div>
+            <div class="wallpaper">
+                <img src="images/Wolf.jpg" alt="Wallpaper 4">
+                <button>Download</button>
+            </div>
+             <div class="wallpaper">
+                <img src="images/nature.jpg" alt="Wallpaper 4">
+                <button>Download</button>
+            </div>
+        </div>
+
+    </section>
+    
+    <footer>
+        <p>© 2025 NOX Wallpapers. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="#">Instagram</a>
+            <a href="#">Pinterest</a>
+            <a href="#">Telegram</a>
+        </div>
+    </footer>
+</body>
+</html>

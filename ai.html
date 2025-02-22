@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOX Wallpapers - AI Generated Wallpapers</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            background: #fff;
+            padding: 10px 0;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        nav ul li a:hover {
+            background: #eaeaea;
+        }
+        .categories, .wallpapers {
+            margin: 30px 0;
+        }
+        .category-list button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            background: #fff;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .category-list button:hover {
+            background: #ddd;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+        }
+        .wallpaper {
+            background: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .wallpaper img {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .wallpaper button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            border: none;
+            background: #007bff;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .wallpaper button:hover {
+            background: #0056b3;
+        }
+        footer {
+            margin-top: 20px;
+            padding: 15px;
+            background: #fff;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+        }
+        .social-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>NOX Wallpapers</h1>
+        <p>Download Stunning AI-Generated Wallpapers – Unique, High-Quality, and Free!</p>
+        <input type="text" placeholder="Search wallpapers..." id="search-bar">
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="trending.html">Trending</a></li>
+            <li><a href="categories.html">Categories</a></li>
+        </ul>
+    </nav>
+    
+    <section class="wallpapers">
+        <h2>AI & Fantasy Art Wallpapers</h2>
+        <div class="grid">
+            <!-- 60 Wallpaper placeholders -->
+            <script>
+                for (let i = 1; i <= 60; i++) {
+                    document.write(`
+                        <div class="wallpaper">
+                            <img src="images/wallpaper${i}.jpg" alt="Wallpaper ${i}">
+                            <button>Download</button>
+                        </div>
+                    `);
+                }
+            </script>
+        </div>
+    </section>
+    
+    <footer>
+        <p>© 2025 NOX Wallpapers. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="#">Instagram</a>
+            <a href="#">Pinterest</a>
+            <a href="#">Telegram</a>
+        </div>
+    </footer>
+</body>
+</html>
